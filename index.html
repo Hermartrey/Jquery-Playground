@@ -36,8 +36,24 @@
             }else{
                 $("button").prop('disabled', false)
             }*/
-            $("#target--5").html("<em>target5</em>"); // We can add html tags and text within an elements
-            $("#target--6").text("Button 6"); // We can replace text within an element.
+            //$("#target--5").html("<em>target5</em>"); // We can add html tags and text within an elements
+            //$("#target--6").text("Button 6"); // We can replace text within an element.
+            //$("#target--6").remove(); // remove element
+           // $("#target--4").appendTo("#left-card"); //appendTo
+            //$("#target--3").appendTo("#right-card");
+            //$("#target--6").clone().appendTo("#left-card"); // FUNCTION CHAINING
+            //$("#target--1").parent().css("background-color","lightblue"); // target parent element
+            //$("#right-card").children().css("color","green", "!important");
+            $(".target:odd").addClass("animate__animated animate__zoomInUp");
+            $(".target:even").addClass("animate__animated animate__slideInDown")
+           // $("body").addclass("animate__animated animate__")
+            $("#hide").click(function(){
+                $("p").hide();
+            })
+            $("#show").click((()=>{
+                $("p").show();
+            }));
+
 
         });//end of jquery document.ready function
     </script>
@@ -63,7 +79,7 @@
 
                     </div>
                     <div class="col-lg-6" style="background-color:green">
-                        <div class="card" id="right card">
+                        <div class="card" id="right-card">
                             <h4 class="card-title">Right Card</h4>
                             <img src="https://logos-download.com/wp-content/uploads/2017/05/jQuery_logo-700x171.png" alt="jquery" class="card-img-top">
                             <div class="card-body"> <button type="button" class="btn btn-danger target" id="target--4">Target 4</button>
@@ -73,6 +89,13 @@
                         </div>
                     </div>
                 </div>
+            </section>
+            <section>
+                <h2>Jquery Effects</h2>
+                <p>We can hide a button and show a button</p>
+
+                <button id="hide">Hide</button>
+                <button id="show">Show</button1show>
             </section>
         </main>
         <script
