@@ -105,6 +105,9 @@
                 $("#panel").slideDown("slow");
             })
 
+            $("button").click(()=>{
+                alert("Value: " + $("#testValue").val());
+            })
 
         });//end of jquery document.ready function
     </script>
@@ -173,6 +176,10 @@
         <section style="height: 50vh; background-color: antiquewhite">
             <div id="flip">Click to slidedown</div>
             <div id="panel">Sliding pannel</div>
+        </section>
+        <section style="height: 50vh; background-color: goldenrod; text-align: center;">
+            <p>Name: <input type="text" id="testValue" value="Hermart torreon"></p>
+            <button>Show</button>
         </section>
 
     </main>
