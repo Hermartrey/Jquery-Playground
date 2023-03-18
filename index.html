@@ -24,8 +24,10 @@
 
        //Anything that you should put in this function will run as soon as browser has loaded 
        $(document).ready(function(){
-            $("button").addClass("animate__animated animate__bounce ")
-       });//end of jquery document.ready function
+            $("button").addClass("animate__animated animate__bounce "); // Wea re targeting an element selector
+            $(".card").addClass("animate__animated animate__shakeY");// we can target classname
+            $("#target--3").addClass("animate__animated animate__shakeX")// we can target element id
+        });//end of jquery document.ready function
     </script>
   </head>
   <body>
